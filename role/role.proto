@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package gms.role.srv.service;
+
+option go_package = "role";
+
+message InfoReply {
+    int64 id = 1;
+    string name = 2;
+}
+
+message InfoReq {
+    int64 id = 1;
+}
+
+service Role {
+  rpc Info(InfoReq) returns (InfoReply) {}
+}

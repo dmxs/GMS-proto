@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package nezha.chat.user.srv.service;
+package gms.user.srv.service;
 
 option go_package = "user";
 
